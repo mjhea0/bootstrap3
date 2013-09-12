@@ -208,11 +208,7 @@ The grid system is now much easier to use. It scales up to 12 columns by default
     </div>
     ```
 
-Test that out. Have some fun with it. Try toying with the background color of the Jumbotron by adding an image, a gradient, or even a basic color:
-
-    ```html
-    <div class="jumbotron" style="background-color: #BAE0FF;">
-    ```
+Test that out. Have some fun with it. Try toying with the background color of the Jumbotron by adding an image, a gradient, or even a basic color: `<div class="jumbotron" style="background-color: #BAE0FF;">`.
     
 Such little changes can make a big difference.
 
