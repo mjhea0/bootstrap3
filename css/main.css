@@ -1,0 +1,44 @@
+body {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background: url(http://subtlepatterns.com/patterns/lightpaperfibers.png) repeat 0 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arvo', Georgia, Times, serif;
+}
+
+p, div {
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+}
+
+.container-narrow {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.container-narrow > hr {
+  margin: 40px 0 0 0;
+}
+
+.jumbotron {
+  margin: 5px 0;
+  text-align: center;
+  background-color:transparent;
+}
+.jumbotron h1 {
+  font-size: 72px;
+  line-height: 1;
+  font-weight: bold;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+.marketing {
+  margin: 40px 0;
+}
+
+.marketing p + h4 {
+  margin-top: 28px;
+}
