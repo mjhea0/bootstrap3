@@ -1,6 +1,6 @@
 # Getting Started with Bootstrap 3
 
-Despite labeling myself as a backend developer, I've been dabbling more and more with front-end design, namely because JavaScript has blurred the lines between the two. On my last project I hacked a bit with HTML and CSS to develop responsive styles - which can be a pain. Thankfully, frameworks such as Bootstrap (formerly known as Twitter Bootstrap) make such design requests fairly simple - and even simplier with the new release of Boostrap 3.
+Despite labeling myself as a backend developer, I've been dabbling more and more with front-end design, namely because JavaScript has blurred the lines between the two. On my last project I hacked a bit with HTML and CSS to develop responsive styles - which can be a pain. Thankfully, frameworks such as Bootstrap (formerly known as Twitter Bootstrap) make such design requests fairly simple - and even simpler with the new release of Bootstrap 3.
 
 Let's take a look.
 
@@ -57,7 +57,7 @@ You can grab the final styles from this [repo](link).
     </html>
     ```
 
-4. Add a nav bar (which is ALWAYS responsive), a container, jumbotron, some [ipsum text](http://hipsteripsum.me/), and a button:
+4. Add a nav bar (which is ALWAYS responsive), a container, Jumbotron, some [ipsum text](http://hipsteripsum.me/), and a button:
 
     ```html
     <!DOCTYPE html>
@@ -119,7 +119,7 @@ You can grab the final styles from this [repo](link).
     <script src="js/bootstrap.min.js"></script>
     ```
 
-At first glance, you can see that all compontenets are flat. And if you're not a fan of flat design there is an alternative theme. Play around with the responsiveness by resizing your browser. Looks pretty good. Responsiveness is now a default in Bootstrap 3 - so now you don't have a choice: You must develop for mobile first. <3
+At first glance, you can see that all components are flat. And if you're not a fan of flat design there is an alternative theme. Play around with the responsiveness by resizing your browser. Looks pretty good. Responsiveness is now a default in Bootstrap 3 - so now you don't have a choice: You must develop for mobile first. <3
 
 ### Grid System
 
@@ -143,7 +143,7 @@ The grid system is now much easier to use. It scales up to 12 columns by default
     </div>
     ```
 
-    > Since each row has 12 units, we made three columns that are 4 units each. Just remember that all columns must add up to 12. Experiment a bit: Try changing the first column to 2 units and the last column to 8 units, or add a new row altogther with another set of columns (or just wait until the next step).  
+    > Since each row has 12 units, we made three columns that are 4 units each. Just remember that all columns must add up to 12. Experiment a bit: Try changing the first column to 2 units and the last column to 8 units, or add a new row altogether with another set of columns (or just wait until the next step).  
     
 2. Add a new row beneath the old row with the following grid (make sure it goes inside the `container` element):
 
@@ -210,9 +210,9 @@ The grid system is now much easier to use. It scales up to 12 columns by default
 
 Test that out. Have some fun with it. Try toying with the background color of the Jumbotron by adding an image, a gradient, or even a basic color: `<div class="jumbotron" style="background-color: #BAE0FF;">`.
     
-Such little changes can make a big difference.
+Such little changes can make a big difference. Make sure your page looks like [mine](http://www.realpython.com/files/bootstrap3/index.html).
 
-## An example
+## An example: Narrow Marketing Bootstrap 3
 
 Let's take this a step further and create a working example. One of my favorite examples from Bootstrap 2 is the [Narrow Marketing Template](http://getbootstrap.com/2.3.2/examples/marketing-narrow.html), which, sadly, isn't part of the examples included with Bootstrap 3. So let's create it ourselves from scratch.
 
@@ -353,13 +353,13 @@ Let's take this a step further and create a working example. One of my favorite 
     </div>
     ```
     
-That's it. Compare it to the Bootstrap 2 [example](http://getbootstrap.com/2.3.2/examples/marketing-narrow.html). Similar. But flat.
+That's it. Compare this [version](http://www.realpython.com/files/bootstrap3/marketing-narrow-bootstrap3.html) to the Bootstrap 2 [version](http://getbootstrap.com/2.3.2/examples/marketing-narrow.html). Similar. But flat.
 
 ## Make it your own
 
 Let's look at some quick ways that you can customize this example to make it look less "Bootstrappy".
 
-1. First, add a new stylesheet called `main.css` and add the embeded styles to it. Don't forget to add the new stylesheet to the `head`, just beneath the first stylesheet. Also, add the following Google fonts as well as a link to the font awesome styles:
+1. First, add a new stylesheet called `main.css` and add the embedded styles to it. Don't forget to add the new stylesheet to the `head`, just beneath the first stylesheet. Also, add the following Google fonts as well as a link to the font awesome styles:
 
     ```html
     <link href="css/main.css" rel="stylesheet" media="screen">
@@ -379,7 +379,7 @@ Let's look at some quick ways that you can customize this example to make it loo
     }
     ```
 
-    > As you can probably tell, it's difficult to find two fonts that look good together. Fortunatrely, there are a lot of good resources - like [here](http://www.briangardner.com/google-font-combinations/) and [here](http://www.mrmcguire.com/10-useful-google-font-combinations-for-your-next-site/).
+    > As you can probably tell, it's difficult to find two fonts that look good together. Fortunately, there are a lot of good resources - like [here](http://www.briangardner.com/google-font-combinations/) and [here](http://www.mrmcguire.com/10-useful-google-font-combinations-for-your-next-site/).
 
 3. Textures can make a big difference, which is why I love [Subtle Patterns](http://subtlepatterns.com/). Update the `body` class with the following code. Make sure to make the Jumbotron transparent as well.
 
@@ -460,5 +460,7 @@ Let's look at some quick ways that you can customize this example to make it loo
     ```html
     <h3><span class="glyphicon glyphicon-asterisk" style="color:#5cb85c"></span> Project name</h3>
     ```
+
+And here's the final [version](http://www.realpython.com/files/bootstrap3/marketing-narrow-bootstrap3-updated.html).
     
 **Good? At the very least, with these basic changes - which took a good five minutes - you are now well underway to taking a generic theme and making it a bit more professional. Cheers.**
