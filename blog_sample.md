@@ -431,7 +431,7 @@ Let's look at some quick ways that you can customize this example to make it loo
     </div>
     ```
     
-    > By the way, I recorded those videos for getting started with a Django Project. Check them out, and then add some styles. :)
+    > By the way, I recorded those videos a few months ago which detail how to get started with a Django Project. Check them out, create a basic project, and then add some styles. :)
     
 6. Update the Jumbotron with some social sharing buttons and a few more icons. <3
 
