@@ -6,7 +6,7 @@ Let's take a look.
 
 > This is a 2-part series. In the first part, we'll only be looking at Bootstrap 3 and how to customize it using HTML and CSS. In the second part, we'll add Python into the mix to build a landing page using Flask + Bootstrap 3. 
 
-You can grab the final styles from this [repo](link).
+You can grab the final styles/pages from this [repo](https://github.com/mjhea0/bootstrap3).
 
 
 ## Create a minimal layout
