@@ -214,7 +214,7 @@ Such little changes can make a big difference. Make sure your page looks like [m
 
 ## An example: Narrow Marketing Bootstrap 3
 
-Let's take this a step further and create a working example. One of my favorite examples from Bootstrap 2 is the [Narrow Marketing Template](http://getbootstrap.com/2.3.2/examples/marketing-narrow.html), which, sadly, isn't part of the examples included with Bootstrap 3. So let's create it ourselves from scratch.
+Let's take this a step further and create a working example. One of my favorite examples from Bootstrap 2 is the [Narrow Marketing Template](http://getbootstrap.com/2.3.2/examples/marketing-narrow.html), which, sadly, isn't part of the [examples](http://getbootstrap.com/getting-started/#examples) included with Bootstrap 3. So let's create it ourselves from scratch.
 
 1. Start with a basic page.
 
