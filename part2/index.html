@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <title>Bootstrap Sales Page.</title>
+  <meta name="author" content="" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+
+  @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400italic,700italic,400,700|Fjalla+One);
+
+  body {
+      font-size: 18px;
+      font-family: "Open Sans", Arial, sans-serif;
+      color: #292b33;
+  }
+
+  h1, h2 {
+      font-family: 'Fjalla One', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 52px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-align: left;
+      margin: 1em 0 0 0;
+  }
+
+  p {
+      line-height: 1.5;
+      margin: 0 0 20px 0;
+  }
+
+  blockquote {
+      border-left: none;
+      position: relative;
+  }
+
+  blockquote::before {
+      content: '“';
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 48px;
+      font-family: "inherit";
+      font-weight: bold;
+  }
+
+  blockquote p {
+      margin: 0 0 10px 20px;
+      font-style: italic;
+      font-family: "Georgia";
+  }
+
+  em {
+      font-family: Georgia, serif;
+      font-size: 1.1em;
+  }
+
+  .lead {
+      margin-top: 0.25em;
+  }
+
+  .bg-white-dark {
+    border-top: 1px solid #cccbd6;
+    border-bottom: 1px solid #cccbd6;
+    background-color: #e7e6f3; /* Older Browsers */
+    background-color: rgba(231, 230, 243, 0.9);
+}
+
+.container {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+ul {
+    list-style-type: circle;
+}
+  .text-white-dark {
+    color: #e7e6f3;
+  }
+
+  .btn-default {
+    font-family: "Fjalla One", sans-serif;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  }
+
+  .btn-default:active,
+  .btn-default.active {
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+            box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  }
+
+  .btn:active,
+  .btn.active {
+    background-image: none;
+  }
+
+  .btn-default {
+    text-shadow: 0 1px 0 #fff;
+    background-image: -webkit-gradient(linear, left 0%, left 100%, from(#ffffff), to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top, #ffffff, 0%, #e6e6e6, 100%);
+    background-image: -moz-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
+    background-image: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%);
+    background-repeat: repeat-x;
+    border-color: #e0e0e0;
+    border-color: #ccc;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  }
+
+  .btn-default:active,
+  .btn-default.active {
+    background-color: #e6e6e6;
+    border-color: #e0e0e0;
+  }
+
+  .btn-success {
+    font-family: "Fjalla One", sans-serif;
+  }
+
+  .btn-success {
+    background: #9292c0; /* Old browsers */
+    background: -moz-linear-gradient(top,  #9292c0 0%, #8181b7 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9292c0), color-stop(100%,#8181b7)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #9292c0 0%,#8181b7 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #9292c0 0%,#8181b7 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #9292c0 0%,#8181b7 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #9292c0 0%,#8181b7 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9292c0', endColorstr='#8181b7',GradientType=0 ); /* IE6-9 */
+    border-color: #f1ddff;
+  }
+
+  .btn-success:hover,
+  .btn-success:focus,
+  .btn-success:active,
+  .btn-success.active {
+    color: #fbfafc;
+    background: #a3a3d1; /* Old browsers */
+    background: -moz-linear-gradient(top,  #a3a3d1 0%, #9292c8 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a3a3d1), color-stop(100%,#9292c8)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #a3a3d1 0%,#9292c8 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #a3a3d1 0%,#9292c8 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #a3a3d1 0%,#9292c8 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #a3a3d1 0%,#9292c8 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a3a3d1', endColorstr='#9292c8',GradientType=0 ); /* IE6-9 */
+    border-color: #f1ddff;
+  }
+
+  .btn-success.disabled:hover,
+  .btn-success[disabled]:hover,
+  fieldset[disabled] .btn-success:hover,
+  .btn-success.disabled:focus,
+  .btn-success[disabled]:focus,
+  fieldset[disabled] .btn-success:focus,
+  .btn-success.disabled:active,
+  .btn-success[disabled]:active,
+  fieldset[disabled] .btn-success:active,
+  .btn-success.disabled.active,
+  .btn-success[disabled].active,
+  fieldset[disabled] .btn-success.active {
+    color: #fbfafc;
+    background: #a3a3d1; /* Old browsers */
+    background: -moz-linear-gradient(top,  #a3a3d1 0%, #9292c8 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a3a3d1), color-stop(100%,#9292c8)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #a3a3d1 0%,#9292c8 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #a3a3d1 0%,#9292c8 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #a3a3d1 0%,#9292c8 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #a3a3d1 0%,#9292c8 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a3a3d1', endColorstr='#9292c8',GradientType=0 ); /* IE6-9 */
+    border-color: #f1ddff;
+  }
+
+  </style>
+<div class="bg-white-dark" id="free-sample">
+  <div class="container">
+    <div class="row">
+
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Get a free sample</h2>
+      <p class="lead">A taste of what is included with the product.</p>
+    </div>
+
+    </div>
+    <div class="row">
+
+      <div class="col-md-10 col-md-offset-1">
+        <div class="panel panel-default">
+          <div class="panel-body text-center">
+            <img alt="sample" src="http://placehold.it/500x250" class="img-rounded" />
+            <p>Describe the sample dolor sit amet and why should I want to get it adipiscint elit.</p>
+            <p>
+            <a href="#" class="btn btn-lg btn-default text-uppercase">
+            <span class="icon icon-download-alt"></span>&#32;
+            Download the sample
+            </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      </div>
+  </div>
+</div>
+
+<div class="container" id="packages">
+
+  <div class="row">
+    <div class="col-md-12">
+      <h2>
+        The Complete Package
+        <span class="pull-right">
+            <a class="btn btn-success btn-lg" href="#">
+                <span class="text-uppercase"><span class="text-white-dark">Buy now for</span> $249</span>
+            </a>
+        </span>
+      </h2>
+      <p class="lead">
+        Cosby sweater cray skateboard.
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="media">
+      <figure class="pull-left col-xs-12 col-md-4">
+          <img src="http://placehold.it/300x250" alt="The Amazing Product" class="media-object img-thumbnail" />
+      </figure>
+      <div class="media-body col-xs-12 col-md-7">
+        <h3 class="media-heading">The best package for lorem ipsumer</h3>
+        <p>
+            Mustache farm-to-table deep v cardigan, Banksy Godard roof party PBR&amp;B.
+        </p>
+        <ul>
+            <li>Details</li>
+            <li>Lorem ipsum</li>
+            <li>Nostrud exercitation</li>
+            <li>Resources ipsum</li>
+            <li>Adipiscit resource</li>
+            <li>Resource numquam</li>
+            <li>Resources ipsum</li>
+            <li>Adipiscit resource</li>
+            <li>Resource numquam</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="bg-white-dark">
+  <div class="container">
+
+  <div class="row">
+    <div class="col-md-12">
+      <h2>
+        The Amazing Product + Resources
+        <span class="pull-right">
+            <a class="btn btn-success btn-lg" href="#">
+                <span class="text-uppercase"><span class="text-white-dark">Buy now for</span> $99</span>
+            </a>
+        </span>
+      </h2>
+        <p class="lead">
+            Cosby sweater cray skateboard.
+        </p>
+    </div>
+  </div>
+
+      <div class="row">
+        <div class="media">
+          <figure class="pull-left col-xs-12 col-md-4">
+              <img src="http://placehold.it/300x250" alt="The Amazing Product" class="media-object img-thumbnail" />
+          </figure>
+          <div class="media-body col-xs-12 col-md-7">
+              <h3 class="media-heading">Perfect for nostrud lorem</h3>
+              <p>
+                  Mustache farm-to-table deep v cardigan, Banksy Godard roof party PBR&amp;B.
+              </p>
+              <ul>
+                  <li>Details</li>
+                  <li>Lorem ipsum</li>
+                  <li>Nostrud exercitation</li>
+                  <li>Resources ipsum</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="row">
+      <div class="col-md-12">
+        <h2>
+            The Amazing Product
+            <span class="pull-right">
+                <a class="btn btn-success btn-lg" href="#">
+                    <span class="text-uppercase"><span class="text-white-dark">Buy now for</span> $39</span>
+                </a>
+            </span>
+        </h2>
+        <p class="lead">
+            Cosby sweater cray skateboard.
+        </p>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="media">
+      <figure class="pull-left col-xs-12 col-md-4">
+          <img src="http://placehold.it/300x250" alt="The Amazing Product" class="media-object img-thumbnail" />
+      </figure>
+      <div class="media-body col-xs-12 col-md-7">
+        <h3 class="media-heading">The budget option</h3>
+        <p>
+            Mustache farm-to-table deep v cardigan, Banksy Godard roof party PBR&amp;B.
+        </p>
+        <p>
+            Cliche sartorial roof party, shabby chic sustainable VHS food truck 90's four loko. Etsy hoodie     distillery, organic beard DIY cliche.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
